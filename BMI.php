@@ -36,7 +36,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $weight = $_POST['weight'];
     $height = $_POST['height'];
 
-    // คำนวณค่า BMI
     $bmi = calculate_bmi($weight, $height);
     $status = get_bmi_status($bmi);
     $advice = get_bmi_advice($bmi);
